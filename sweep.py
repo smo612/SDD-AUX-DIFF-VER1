@@ -18,7 +18,7 @@ import matplotlib.pyplot as plt
 LOCAL_IMG = "kodim01"      # 干擾源 (Local TX)
 REMOTE_IMG = "kodim24"     # 期望訊號 (Remote TX)
 
-RSI_SCALE_LIST = [10000, 50000, 100000, 250000, 1000000, 3150000]
+RSI_SCALE_LIST = [10000, 50000, 100000, 250000, 1000000, 3150000,10000000]
 USE_NO_NORMALIZE = True    # 極端測試時關閉歸一化
 
 
@@ -122,7 +122,7 @@ def main():
 
     if args.mode == 'ai_comp':
         tags = ['precomp_analog', 'precomp_digital', 'precomp_diffusion']
-        labels = {'precomp_analog': 'Analog Only (Aux-TX)', 'precomp_digital': 'Digital SIC (WL-MP)', 'precomp_diffusion': 'AI-SIC (1D Diffusion)'}
+        labels = {'precomp_analog': 'Analog Only (Aux-TX)', 'precomp_digital': 'Analog SIC + MP', 'precomp_diffusion': 'Analog SIC +  Diffusion'}
         colors = {'precomp_analog': 'gray', 'precomp_digital': 'orange', 'precomp_diffusion': 'blue'}
         markers = {'precomp_analog': 'v', 'precomp_digital': 's', 'precomp_diffusion': '*'}
         title_suffix = "Ablation Study: Mathematical MP vs AI-SIC"
