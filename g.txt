@@ -1,0 +1,213 @@
+(base) ee715-3090@ee715-3090:~/文件/Analog_Self_Interference_Cancellation_Using_Auxiliary_Transmitter_Considering_IQI_and_NL/simulation_code$ grep -nE "N=|Ns|NUM|iter|trial|loop|Monte|MC|length|L=|tap|TAP|samples" main.cpp
+46:	// int Nsym = 100;
+47:	int Nsym = 500;
+48:	// std::vector<int> Nsym;
+50:	// 	Nsym.push_back(i);
+66:	// int L = Nsym.size();
+77:		// std::cout << "Nsym = " << Nsym[i] << " こ" << std::endl;
+81:			// can[j][i] = submain(P[j], K_dB[i], IRR_dB, INR_dB, _3dBBW, BO, Nsym, tau_tx);
+82:			// can[j][i] = submain(P[j], K_dB, IRR_dB[i], INR_dB, _3dBBW, BO, Nsym, tau_tx);
+83:			// can[j][i] = submain(P[j], K_dB, IRR_dB, INR_dB[i], _3dBBW, BO, Nsym, tau_tx);
+84:			// can[j][i] = submain(P[j], K_dB, IRR_dB, INR_dB, _3dBBW[i], BO, Nsym, tau_tx);
+85:			can[j][i] = submain(P[j], K_dB, IRR_dB, INR_dB, _3dBBW, BO[i], Nsym, tau_tx);
+86:			// can[j][i] = submain(P[j], K_dB, IRR_dB, INR_dB, _3dBBW, BO, Nsym[i], tau_tx);
+87:			// can[j][i] = submain(P[j], K_dB, IRR_dB, INR_dB, _3dBBW, BO, Nsym, tau_tx[i]);
+99:		// file_power[0][i] = Nsym[i];
+110:	// std::string file = "Nsym.csv";
+(base) ee715-3090@ee715-3090:~/文件/Analog_Self_Interference_Cancellation_Using_Auxiliary_Transmitter_Considering_IQI_and_NL/simulation_code$ g++ -O2 -std=c++17 main.cpp -o sim -pthread -llapacke -llapack -lblas
+(base) ee715-3090@ee715-3090:~/文件/Analog_Self_Interference_Cancellation_Using_Auxiliary_Transmitter_Considering_IQI_and_NL/simulation_code$ ./sim
+BO = 0 dB
+P = 1
+Cancellation = 13.0355 dB
+P = 3
+Cancellation = 23.1246 dB
+P = 5
+Cancellation = 31.995 dB
+P = 7
+Cancellation = 34.1344 dB
+
+BO = 1 dB
+P = 1
+Cancellation = 14.3142 dB
+P = 3
+Cancellation = 26.1496 dB
+P = 5
+Cancellation = 33.6991 dB
+P = 7
+Cancellation = 33.3068 dB
+
+BO = 2 dB
+P = 1
+Cancellation = 15.8513 dB
+P = 3
+Cancellation = 29.7079 dB
+P = 5
+Cancellation = 33.8963 dB
+P = 7
+Cancellation = 33.76 dB
+
+BO = 3 dB
+P = 1
+Cancellation = 17.6399 dB
+P = 3
+Cancellation = 33.0079 dB
+P = 5
+Cancellation = 33.7975 dB
+P = 7
+Cancellation = 35.4263 dB
+
+BO = 4 dB
+P = 1
+Cancellation = 19.805 dB
+P = 3
+Cancellation = 34.8101 dB
+P = 5
+Cancellation = 34.651 dB
+P = 7
+Cancellation = 38.8977 dB
+
+BO = 5 dB
+P = 1
+Cancellation = 22.293 dB
+P = 3
+Cancellation = 35.1848 dB
+P = 5
+Cancellation = 36.5402 dB
+P = 7
+Cancellation = 41.5287 dB
+
+BO = 6 dB
+P = 1
+Cancellation = 25.2185 dB
+P = 3
+Cancellation = 35.8048 dB
+P = 5
+Cancellation = 39.8586 dB
+P = 7
+Cancellation = 49.8115 dB
+
+BO = 7 dB
+P = 1
+Cancellation = 28.6392 dB
+P = 3
+Cancellation = 37.204 dB
+P = 5
+Cancellation = 44.454 dB
+P = 7
+Cancellation = 55.0779 dB
+
+BO = 8 dB
+P = 1
+Cancellation = 32.4374 dB
+P = 3
+Cancellation = 39.5571 dB
+P = 5
+Cancellation = 50.3524 dB
+P = 7
+Cancellation = 54.2984 dB
+
+BO = 9 dB
+P = 1
+Cancellation = 36.8503 dB
+P = 3
+Cancellation = 42.5967 dB
+P = 5
+Cancellation = 57.6801 dB
+P = 7
+Cancellation = 57.4589 dB
+
+BO = 10 dB
+P = 1
+Cancellation = 41.4893 dB
+P = 3
+Cancellation = 46.4905 dB
+P = 5
+Cancellation = 60.1487 dB
+P = 7
+Cancellation = 58.0242 dB
+
+BO = 11 dB
+P = 1
+Cancellation = 46.5892 dB
+P = 3
+Cancellation = 50.9608 dB
+P = 5
+Cancellation = 60.6095 dB
+P = 7
+Cancellation = 61.2086 dB
+
+BO = 12 dB
+P = 1
+Cancellation = 51.8062 dB
+P = 3
+Cancellation = 55.0293 dB
+P = 5
+Cancellation = 61.1484 dB
+P = 7
+Cancellation = 61.5471 dB
+
+BO = 13 dB
+P = 1
+Cancellation = 56.363 dB
+P = 3
+Cancellation = 58.7948 dB
+P = 5
+Cancellation = 61.3721 dB
+P = 7
+Cancellation = 61.6573 dB
+
+BO = 14 dB
+P = 1
+Cancellation = 59.5115 dB
+P = 3
+Cancellation = 60.7641 dB
+P = 5
+Cancellation = 61.6838 dB
+P = 7
+Cancellation = 61.6995 dB
+
+BO = 15 dB
+P = 1
+Cancellation = 61.0823 dB
+P = 3
+Cancellation = 61.453 dB
+P = 5
+Cancellation = 61.6967 dB
+P = 7
+Cancellation = 61.6895 dB
+
+BO = 16 dB
+P = 1
+Cancellation = 61.5609 dB
+P = 3
+Cancellation = 61.6495 dB
+P = 5
+Cancellation = 61.7274 dB
+P = 7
+Cancellation = 61.6991 dB
+
+BO = 17 dB
+P = 1
+Cancellation = 61.6969 dB
+P = 3
+Cancellation = 61.7068 dB
+P = 5
+Cancellation = 61.7611 dB
+P = 7
+Cancellation = 61.7228 dB
+
+BO = 18 dB
+P = 1
+Cancellation = 61.706 dB
+P = 3
+Cancellation = 61.7453 dB
+P = 5
+Cancellation = 61.7031 dB
+P = 7
+Cancellation = 61.7139 dB
+
+BO = 19 dB
+P = 1
+Cancellation = 61.7207 dB
+P = 3
+Cancellation = 61.744 dB

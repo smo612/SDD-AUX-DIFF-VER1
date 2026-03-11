@@ -1,0 +1,15 @@
+{
+  "backend": "MP",
+  "snr_db": 25.0,
+  "Supp_analog": 58.86252476294629,
+  "SINR_analog": 24.127014815822246,
+  "Digital_gain": 0.8729851841777538,
+  "Digital_supp_si": 1.396662331437872,
+  "SINR_after_digital": 25.0,
+  "Total_supp_SI_only": 60.25918709438417,
+  "params": {
+    "L": null,
+    "lambda": null
+  },
+  "pilot_correction": null
+}

@@ -1,0 +1,26 @@
+{
+  "mp": {
+    "poly_orders": [
+      1,
+      3,
+      5
+    ],
+    "memory_len": 7,
+    "ridge_lambda": 0.001,
+    "with_conj": true
+  },
+  "mpnn": {
+    "window_L": 13,
+    "hidden": [
+      64,
+      32
+    ],
+    "dropout": 0.1,
+    "lr": 0.0005,
+    "epochs": 40,
+    "batch_symbols": 2048,
+    "lambda_energy": 0.4,
+    "gate_patience": 2
+  },
+  "device": "cpu"
+}

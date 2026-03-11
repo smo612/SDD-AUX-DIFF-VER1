@@ -1,0 +1,11 @@
+{
+  "rsi_scale": 100000,
+  "run_tag": "precomp_digital",
+  "time_sec": 12.041137456893921,
+  "sinr_pre": -44.73550579303279,
+  "sinr_after_analog": 19.91282100571123,
+  "sinr_after_digital": 22.565067512384104,
+  "analog_supp_db": NaN,
+  "digital_supp_db": NaN,
+  "psnr": 34.73012161254883
+}

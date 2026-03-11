@@ -1,0 +1,46 @@
+{
+  "tx_info": {
+    "mode": "semantic",
+    "ntscc_mode": "real",
+    "ntscc_ckpt": "checkpoints/PSNR_SNR=10_gaussian/ntscc_hyperprior_quality_4_psnr.pth",
+    "B": 1,
+    "H": 128,
+    "W": 128,
+    "cbr": 0.0625,
+    "sps": 1,
+    "pulse_shaping": "none",
+    "seed": null,
+    "normalize_power": false
+  },
+  "pilot_info": {
+    "pilot_enabled": true,
+    "pilot_period": 64,
+    "pilot_val": {
+      "real": 1.0,
+      "imag": 0.0,
+      "magnitude": 1.0
+    },
+    "n_pilots": 127
+  },
+  "signal_info": {
+    "latent_shape": [
+      1,
+      256,
+      8,
+      8
+    ],
+    "flatten_order": "even->I,odd->Q",
+    "n_data_symbols": 8192,
+    "n_total_symbols": 8319,
+    "original_power": 24.891538619995117,
+    "mean_power": 24.526803970336914,
+    "power_check_passed": true,
+    "tx_scale": 1.0,
+    "dtype": "complex64"
+  },
+  "source_info": {
+    "source_image": "data/kodak/kodim24.png",
+    "image_name": "kodim24",
+    "dataset": "Kodak"
+  }
+}

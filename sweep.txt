@@ -1,0 +1,49 @@
+(sdd) ee715-3090@ee715-3090:~/文件/SDD FINAL$ python sweep.py
+================================================================================
+SWEEP START
+LOCAL_IMG=kodim01, REMOTE_IMG=kodim24
+NO_NORMALIZE=True
+RSI scales: [10, 20, 50, 100, 200, 500]
+================================================================================
+
+--- Running rsi10_analog_only ---
+  pre=-3.65 dB | analog=2.02 dB | digital=2.02 dB | psnr=19.69 dB
+
+--- Running rsi10_mp ---
+  pre=-4.00 dB | analog=-0.26 dB | digital=16.45 dB | psnr=32.70 dB
+
+--- Running rsi20_analog_only ---
+  pre=-6.97 dB | analog=3.63 dB | digital=3.63 dB | psnr=22.70 dB
+
+--- Running rsi20_mp ---
+  pre=-6.99 dB | analog=-2.35 dB | digital=16.22 dB | psnr=30.98 dB
+
+--- Running rsi50_analog_only ---
+  pre=-11.77 dB | analog=-10.43 dB | digital=-10.43 dB | psnr=14.07 dB
+
+--- Running rsi50_mp ---
+  pre=-11.55 dB | analog=-0.63 dB | digital=20.13 dB | psnr=32.24 dB
+
+--- Running rsi100_analog_only ---
+  pre=-14.07 dB | analog=-10.69 dB | digital=-10.69 dB | psnr=12.26 dB
+
+--- Running rsi100_mp ---
+  pre=-14.32 dB | analog=-10.72 dB | digital=8.27 dB | psnr=25.26 dB
+
+--- Running rsi200_analog_only ---
+  pre=-17.20 dB | analog=-8.95 dB | digital=-8.95 dB | psnr=13.78 dB
+
+--- Running rsi200_mp ---
+  pre=-17.24 dB | analog=-11.90 dB | digital=4.97 dB | psnr=23.41 dB
+
+--- Running rsi500_analog_only ---
+  pre=-20.95 dB | analog=-18.09 dB | digital=-18.09 dB | psnr=13.07 dB
+
+--- Running rsi500_mp ---
+  pre=-20.92 dB | analog=-18.74 dB | digital=-1.49 dB | psnr=16.85 dB
+
+[OK] Saved:
+  - results_sweep/sweep_results.csv
+  - results_sweep/plot_sinr_vs_rsi.png
+  - results_sweep/plot_psnr_vs_rsi.png
+SWEEP DONE

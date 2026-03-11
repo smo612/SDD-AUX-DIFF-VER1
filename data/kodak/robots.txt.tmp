@@ -1,0 +1,10 @@
+User-agent: *
+Disallow: /cgi-bin/
+Disallow: /scgi-bin/
+Disallow: /cgi-sys/
+# Disallow: /forum/
+# Disallow: /rock/games/CoH/td/forum/memberlist.php
+# Disallow: /rock/games/CoH/td/forum/profile.php
+Disallow: /rock/Junk/
+Disallow: /rock/junk/
+Disallow: /pc/
